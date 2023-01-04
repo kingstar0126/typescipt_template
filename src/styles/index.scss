@@ -1,0 +1,16 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './variables.scss';
+@import './mediaQueries.scss';
+@import './animations.scss';
+@import './mixins.scss';
+// Set 1rem = 10px
+html {
+  font-size: 62.5%;
+}
+// Set box-sizing globally for consisten behavior
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 100%;
+}

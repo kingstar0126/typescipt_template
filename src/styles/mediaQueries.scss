@@ -1,0 +1,18 @@
+$med: 500px;
+$tablet: 800px;
+
+@mixin bp($point) {
+  @if $point == med {
+    @media screen and (min-width: $med) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $point) {
+      @content;
+    }
+  }
+}
